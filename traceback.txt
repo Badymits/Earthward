@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "renpy/common/00start.rpy", line 234, in script call
+    call _splashscreen from _call_splashscreen_1
+  File "game/script.rpy", line 26, in script
+    $ renpy.pause(1.0, hard=True, text_align=Middle)
+  File "game/script.rpy", line 26, in <module>
+    $ renpy.pause(1.0, hard=True, text_align=Middle)
+NameError: name 'Middle' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 234, in script call
+    call _splashscreen from _call_splashscreen_1
+  File "game/script.rpy", line 26, in script
+    $ renpy.pause(1.0, hard=True, text_align=Middle)
+  File "renpy/ast.py", line 923, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2235, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 26, in <module>
+    $ renpy.pause(1.0, hard=True, text_align=Middle)
+NameError: name 'Middle' is not defined
+
+Windows-10-10.0.19041
+Ren'Py 7.4.8.1895
+Earthward 1.0
+Sun Sep 19 20:12:58 2021
